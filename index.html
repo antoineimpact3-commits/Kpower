@@ -5,61 +5,115 @@
   <title>KPower Gym</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #111;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
       color: #fff;
-      text-align: center;
       margin: 0;
       padding: 0;
     }
     header {
-      background: #e63946;
-      padding: 20px;
+      background: linear-gradient(135deg, #4b0082, #000);
+      padding: 40px;
+      text-align: center;
     }
     header h1 {
+      font-size: 3em;
       margin: 0;
-      font-size: 2.5em;
+      color: #fff;
     }
-    section {
-      padding: 40px;
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
     }
-    a {
-      color: #e63946;
+    nav {
+      background: #111;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: #a020f0;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
-    a:hover {
-      text-decoration: underline;
+    nav a:hover {
+      color: #fff;
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+    section h2 {
+      color: #a020f0;
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border: 3px solid #a020f0;
+      border-radius: 10px;
     }
     footer {
-      background: #222;
+      background: #111;
+      color: #ccc;
+      text-align: center;
       padding: 20px;
       font-size: 0.9em;
+    }
+    footer a {
+      color: #a020f0;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to KPower Gym</h1>
+    <h1>KPower Gym</h1>
     <p>Strength • Discipline • Power</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.instagram.com/kpowerlb?igsh=MW5jZDM3Ym1vOXphaw==" target="_blank">Instagram</a>
+  </nav>
+
+  <section id="about">
     <h2>About Us</h2>
-    <p>KPower is your destination for fitness, strength training, and community. 
-       Join us to transform your body and mind.</p>
+    <p>KPower Gym is your destination for fitness, strength training, and community. 
+       Join us to transform your body and mind with expert trainers and a motivating environment.</p>
   </section>
 
-  <section>
-    <h2>Follow Us</h2>
-    <p>Stay connected with us on Instagram:</p>
-    <p><a href="https://www.instagram.com/kpowerlb?igsh=MW5jZDM3Ym1vOXphaw==" target="_blank">
-       Visit KPower Instagram
-    </a></p>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <!-- Replace these links with actual Instagram image URLs -->
+      <img src="https://via.placeholder.com/300x300.png?text=KPower+1" alt="Gym photo 1">
+      <img src="https://via.placeholder.com/300x300.png?text=KPower+2" alt="Gym photo 2">
+      <img src="https://via.placeholder.com/300x300.png?text=KPower+3" alt="Gym photo 3">
+    </div>
+    <p>Follow us on Instagram for more!</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@kpowergym.com">info@kpowergym.com</a></p>
+    <p>Phone: +961-XXX-XXXX</p>
+    <p>Location: Ain Anoub, Mount Lebanon</p>
   </section>
 
   <footer>
-    <p>&copy; 2026 KPower Gym. All rights reserved.</p>
+    <p>&copy; 2026 KPower Gym. All rights reserved. | 
+       <a href="https://www.instagram.com/kpowerlb?igsh=MW5jZDM3Ym1vOXphaw==" target="_blank">Instagram</a></p>
   </footer>
 </body>
 </html>
+
